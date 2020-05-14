@@ -100,6 +100,10 @@ h6 {
   background: var(--secondary-color);
 }
 
+.btn-dark {
+  background: var(--dark-color);
+}
+
 .btn:hover {
   opacity: 0.85;
 }
@@ -161,6 +165,18 @@ h6 {
 
 .list li a:hover {
   color: var(--primary-color) !important;
+}
+
+/* Innger page grid container */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
 }
 
 /*navigation*/
@@ -303,3 +319,4 @@ h6 {
 #main-footer .footer-container input[type='submit'] {
   width: 90%;
 }
+
